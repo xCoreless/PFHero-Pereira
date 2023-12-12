@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap");
+.gallery {
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+  margin-bottom: 3rem;
+}
+.gallery h2 {
+  color: dodgerBlue;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.imageGallery {
+  border-radius: 1rem;
+  padding: 0.4rem;
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(50%);
+}
+.imageGallery:hover {
+  filter: grayscale(0);
+}
+
+body {
+  background-color: plum;
+  color: dodgerBlue;
+  font-family: "Exo 2", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.header .inicio {
+  text-decoration: none;
+  color: dodgerBlue;
+  font-size: 2rem;
+}
+.header .inicio img {
+  font-size: 4rem;
+  color: green;
+}
+.header .inicio h1 {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.header ul {
+  display: flex;
+  list-style: none;
+}
+.header ul li {
+  margin-right: 3rem;
+}
+.header ul li a {
+  text-decoration: none;
+  color: dodgerBlue;
+  font-size: 2rem;
+}
+.header ul li a:hover {
+  color: indigo;
+}
+
+.hero {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+.hero h2 {
+  margin-bottom: 1rem;
+  font-size: 3.8rem;
+  font-weight: 500;
+}
+.hero h2 span {
+  font-weight: 700;
+  position: relative;
+  padding: 0 5px;
+}
+.hero h2 span::before {
+  content: "";
+  position: absolute;
+  height: 30%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 4px;
+  z-index: 1;
+}
+.hero p {
+  color: indigo;
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+}
+.hero a {
+  background-color: green;
+  text-decoration: none;
+  color: dodgerBlue;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+.hero a:hover {
+  background-color: limeGreen;
+}
+
+@media (max-width: 767px) {
+  .inicio {
+    display: none;
+  }
+  .imageGallery {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
